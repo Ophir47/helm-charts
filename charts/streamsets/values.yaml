@@ -22,11 +22,11 @@ streamsets:
     SDC_JAVA_OPTS: "-Xmx2048m -Xms2048m -server"
   resources:
     limits:
-     cpu: 500m
-     memory: 2Gi
+     cpu: 1
+     memory: 3Gi
     requests:
-     cpu: 500m
-     memory: 2Gi
+     cpu: 1
+     memory: 3Gi
 
 nameOverride: "streamsets-agent"
 fullnameOverride: "streamsets-agent"
