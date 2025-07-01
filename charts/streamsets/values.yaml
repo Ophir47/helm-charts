@@ -16,17 +16,17 @@ busybox:
 
 streamsets:
   repository: anodot/streamsets
-  tag: 3.52.0
+  tag: 3.53.1
   pullPolicy: IfNotPresent
   env:
-    SDC_JAVA_OPTS: "-Xmx4096m -Xms4096m -server"
+    SDC_JAVA_OPTS: "-Xmx2048m -Xms2048m -server"
   resources:
     limits:
-     cpu: 2
-     memory: 6Gi
+     cpu: 500m
+     memory: 2Gi
     requests:
-     cpu: 2
-     memory: 6Gi
+     cpu: 500m
+     memory: 2Gi
 
 nameOverride: "streamsets-agent"
 fullnameOverride: "streamsets-agent"
